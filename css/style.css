@@ -111,3 +111,56 @@ header {
     box-shadow: 0 0 0 0 #EBD25D;
     transform: translate(0, 3px);
 }
+
+
+.number-block {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0px 12px 32px rgba(19, 30, 71, 0.15);
+    margin-top: -65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.numbersColumn {
+    text-align: center;
+}
+
+.numbers__count {
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFE671;
+    margin-top: 52px;
+
+}
+
+.numbers__count-name {
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFE671;
+    margin-top: -16px;
+
+}
+
+.numbers__count-descr {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #323232;
+    margin-top: 15px;
+    margin-bottom: 51px;
+    max-width: 140px;
+}
