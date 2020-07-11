@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Rubik, sans-serif;
+    box-sizing: border-box;
+    color: #323232;
+}
+
+
+header {
+    height: 711px;
+    background: #F0FAFF;
+    background-image: url(../img/cour.png);
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    padding-top: 30px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-link {
+    color: #323232;
+    font-size: 16px;
+    line-height: 19px;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: #FFE671;
+}
