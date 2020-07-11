@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +7,6 @@ body {
     box-sizing: border-box;
     color: #323232;
 }
-
 
 header {
     height: 711px;
@@ -26,6 +27,9 @@ header {
 
 .nav-link {
     color: #323232;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     transition: .3s;
@@ -33,4 +37,77 @@ header {
 
 .nav-link:hover {
     color: #FFE671;
+}
+
+.hero-title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 49px;
+    font-family: Montserrat Alternates;
+    font-weight: bold;
+    color: #323232;
+}
+
+.hero-desc {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #323232;
+}
+
+.hero-place {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #323232;
+    opacity: 0.6;
+    position: relative;
+    top: 40%;
+    transform: translate(0,-50%);
+}
+
+.place-icon {
+    width: 70px;
+    height: 70px;
+    background: #FFF;
+    box-shadow: 0px 12px 32px rgba(19, 30, 71, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.hero-button {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 250px;
+    height: 70px;
+    background: #FFE671;
+    border-radius: 99px;
+    font-weight: 500;
+    font-size: 20px;
+    box-shadow: 0 3px 0 0 #EBD25D;
+    transition: .3s;
+}
+
+.hero-button__text {
+    color: #323232;
+    padding-right: 15px;
+}
+
+.hero-button:hover {
+    text-decoration: none;
+}
+
+.hero-button:active {
+    box-shadow: 0 0 0 0 #EBD25D;
+    transform: translate(0, 3px);
 }
