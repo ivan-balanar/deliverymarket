@@ -53,7 +53,6 @@ header {
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
-    line-height: 40px;
     color: #323232;
 }
 
@@ -153,14 +152,139 @@ header {
 }
 
 .numbers__count-descr {
-    font-family: Rubik;
-    font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
     color: #323232;
-    margin-top: 15px;
-    margin-bottom: 51px;
-    max-width: 140px;
+    margin: 15px 0 30px 0;
+    max-width: 130px;
+}
+
+@media (max-width: 1200px) {
+    header {
+        background-position: 140% 50%;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .hero-title {
+        font-size: 40px;
+        margin-top: 120px;
+    }
+    .hero-desc {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        background: linear-gradient(120deg, #f0faff 65%,  #ffe671 35%);
+    }
+    .hero-title {
+        font-size: 35px;
+    }
+
+    .hero-desc {
+        font-size: 20px;
+    }
+
+    .place-icon {
+        margin-top: -8px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 600px;
+    }
+    .hero-title {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    .hero-desc {
+        font-size: 20px;
+    }
+    
+    .hero-place {
+        font-size: 14px;
+        top: 50%;
+    }
+
+    .hero-button {
+        margin-top: 60px;
+        width: 220px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .numbers {
+        margin-top: 65px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        height: 100vw;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .hero-title {
+        font-size: 6vw;
+        margin-top: 10vw;
+        margin-bottom: 8vw;
+    }
+
+    .hero-desc {
+        font-size: 3.3vw;
+    }
+    
+    .hero-place {
+        display: none;
+    }
+
+    .place-icon {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .place-icon img {
+        width: 5vw;
+    }
+
+    .hero-button {
+        margin-top: 6vw;
+        width: 50vw;
+        height: 13vw;
+        font-size: 4vw;
+    }
+
+    .hero-button img {
+        width: 3vw;
+    }
+
+    .numbers__count {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    .numbers__count-name {
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+
+    .numbers__count-descr {
+        font-size: 3.2vw;
+        line-height: 3.2vw;
+    }
+
+}
+
+@media (max-width: 350px) {
+    header {
+        width: 110vw;
+    }
 }
