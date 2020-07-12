@@ -247,6 +247,29 @@ header {
     opacity: 0.5;
 }
 
+.market-card__view-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFE671;
+}
+
+.market-card__view-all__img {
+    margin-left: 10px;
+}
+
+.market-card__view-all:hover {
+    text-decoration: none;
+    color: #FFE671
+}
+
+
+/* MEDIA */
+
 @media (max-width: 1200px) {
     header {
         background-position: 140% 50%;
@@ -261,6 +284,19 @@ header {
     .hero-desc {
         font-size: 22px;
     }
+
+    .marketplace {
+        margin-top: 12vw;
+    }
+
+    .heading {
+        font-size: 3vw;
+    }
+
+    .market-card {
+        margin-top: 5vw;
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -368,10 +404,28 @@ header {
         line-height: 3.2vw;
     }
 
+    .heading {
+        font-size: 4vw;
+    }
+
+    .market-card__view-all {
+        margin-top: 12vw;
+        font-size: 4vw;
+    }
+
 }
 
 @media (max-width: 350px) {
     header {
         width: 110vw;
+    }
+
+    .market-card__title {
+        font-size: 5vw;
+    }
+
+    .market-card__price, .market-card__rated__value, .market-card__review {
+        font-size: 4vw;
+        line-height: 4vw;
     }
 }
