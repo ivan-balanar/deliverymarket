@@ -365,24 +365,35 @@
         </div>
     </section>
 
+    <section class="mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-1 mobile__iphone-block">
+                    <img src="/img/iphone.png" alt="phone" class="iphone">
+                </div>
+
+                <div class="col-lg-7">
+                    <h4 class="heading heading-mobile">
+                        Мобильное приложение<br>DeliveryMarket
+                    </h4>
+                    <p class="mobile__description">
+                        Заказывать продукты стало ещё удобнее!<br>Получите ссылку на скачивание по SMS 
+                    </p>
+                    <div class="mobile__get-link">
+                        <input type="text" id="phone-number" placeholder="+7 (___) ___-__-__">
+                        <button href="#" class="hero-button">
+                            <span class="hero-button__text">Получить ссылку</span>
+                            <img src="/img/svg/Arrow.svg" alt="Arrow">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            var link = $('.mobile-navigation__burger-link');
-            var link_active = $('.mobile-navigation__burger-link');
-            var navigation = $('.mobile-navigation__nav');
-            var nav_active = $('.nav_active');
-
-            link.click(function(){
-                link.toggleClass('.mobile-navigation__burger-link_active');
-                navigation.toggleClass('nav_active')                
-            });
-
-            link_active.click(function(){
-                navigation_active.removeClass('nav_active');
-            });
-        });
-    </script>
+    <script src="/js/jquery.maskedinput.min.js"></script>
+    <script src="/js/script.js"></script>
 
 </body>
 </html>

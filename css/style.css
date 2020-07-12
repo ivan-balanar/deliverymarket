@@ -362,6 +362,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 60px;
+    margin-bottom: 186px;
     font-family: Rubik;
     font-weight: 500;
     font-size: 20px;
@@ -377,6 +378,60 @@ header {
     color: #FFE671
 }
 
+/* Row phone */
+
+.mobile {
+    background: #F0FAFF;
+    height: 431px;
+}
+
+.iphone {
+    margin-top: -54px;
+}
+
+.heading-mobile {
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.mobile__description {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 22px;
+    color: #323232;
+}
+
+.mobile__get-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#phone-number {
+    border: 1px solid #D2D2D2;
+    box-sizing: border-box;
+    border-radius: 99px;
+    font-family: Rubik;
+    font-size: 16px;
+    color: #323232;
+    opacity: 0.3;
+    text-align: center;
+    width: 294px;
+    height: 73px;
+}
+
+.mobile .hero-button {
+    margin: 0;
+    border: none;
+    width: 295px;
+}
+
+.mobile .hero-button:focus, #phone-number:focus {
+    outline: none;
+}
 
 /* Adaptive */
 
