@@ -160,6 +160,93 @@ header {
     max-width: 130px;
 }
 
+.marketplace {
+    margin-top: 149px;
+}
+
+.heading {
+    display: block;
+    margin: 0 auto;
+    font-family: Montserrat Alternates;
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #323232;
+}
+
+.market-card {
+    margin-top: 59px;
+}
+
+.market-card__img {
+    width: 100%;
+}
+
+.market-card p {
+    margin: 0;
+}
+
+.market-card__text {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.market-card__name {
+    
+}
+
+.market-card__link {
+    font-family: Rubik;
+    font-weight: bold;
+    font-size: 20px;
+    color: #323232;
+    transition: .3s;
+}
+
+.market-card__link:hover {
+    text-decoration: none;
+    color: #FFE671;
+}
+
+.market-card__title {
+
+}
+
+.market-card__price {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 15px;
+    color: #323232;
+    
+}
+
+.market-card__rated {
+    text-align: right;
+}
+
+.market-card__rated__value {
+    display: inline;
+    padding: 0 10px;
+    line-height: 30px;
+    background: #FFE671;
+    border-radius: 9px;
+    font-family: Rubik;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.market-card__review {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 15px;
+    color: #323232;
+    opacity: 0.5;
+}
+
 @media (max-width: 1200px) {
     header {
         background-position: 140% 50%;
