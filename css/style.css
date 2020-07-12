@@ -8,6 +8,113 @@ body {
     color: #323232;
 }
 
+/* Mobile menu */
+
+.mobile-navigation__burger-link {
+    display: none;
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 3px 0 0 #EBD25D;
+    background: #ffe671;
+    border: none;
+    z-index: 100;
+    transition: .3s;
+}
+
+.mobile-navigation__burger-link span,
+.mobile-navigation__burger-link span:before,
+.mobile-navigation__burger-link span:after {
+    display: block;
+    height: 2px;
+    background-color: #323232;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .3s;
+}
+
+.mobile-navigation__burger-link span {
+    width: 20px;
+    margin-left: -9px;
+    margin-top: 0;
+}
+
+.mobile-navigation__burger-link span:before {
+    content: '';
+    width: 17px;
+    margin-left: -7px;
+    margin-top: -6px;
+}
+
+.mobile-navigation__burger-link span:after {
+    content: '';
+    width: 14px;
+    margin-left: -4px;
+    margin-top: 4px;
+}
+
+.mobile-navigation__burger-link_active span:before, 
+.mobile-navigation__burger-link_active span:after {
+    width: 20px;
+    margin-left: -10px;
+}
+
+.mobile-navigation__burger-link:active {
+    box-shadow: 0 0 0 0 #EBD25D;
+    transform: translate(0, 3px);
+}
+
+.mobile-navigation__burger-link:active, 
+.mobile-navigation__burger-link:focus {
+    outline: none;
+}
+
+.mobile-navigation__nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: .5s;
+    z-index: 99;
+    left: 100%;
+}
+
+.nav_active {
+    left: 0;
+}
+
+.mobile-navigation__nav__menu {
+    list-style: none;
+    text-align: center;
+}
+
+.mobile-navigation__nav__menu-item {
+    margin: 10px auto;
+}
+
+.mobile-navigation__nav__menu-link {
+    color: #323232;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    z-index: 1;
+    transition: .3s;
+}
+
+.mobile-navigation__nav__menu-link:hover {
+    text-decoration: none;
+    color: #EBD25D;
+}
+
+/* Header */
+
 header {
     height: 711px;
     background: #F0FAFF;
@@ -15,6 +122,7 @@ header {
     background-repeat: no-repeat;
     background-position: 75% 50%;
     padding-top: 30px;
+    z-index: 99;
 }
 
 .nav-menu {
@@ -160,6 +268,8 @@ header {
     max-width: 130px;
 }
 
+/* Market card */
+
 .marketplace {
     margin-top: 149px;
 }
@@ -268,7 +378,7 @@ header {
 }
 
 
-/* MEDIA */
+/* Adaptive */
 
 @media (max-width: 1200px) {
     header {
@@ -295,6 +405,10 @@ header {
 
     .market-card {
         margin-top: 5vw;
+    }
+
+    .mobile-navigation__burger-link {
+        display: block;
     }
 
 }

@@ -10,6 +10,26 @@
 
 </head>
 <body>
+
+    <div class="mobile-navigation">
+        <button class="mobile-navigation__burger-link">
+            <span></span>
+        </button>
+        <div class="mobile-navigation__nav">
+            <ul class="mobile-navigation__nav__menu">
+                <li class="mobile-navigation__nav__menu-item">
+                    <a href="#" class="mobile-navigation__nav__menu-link">О сервисе</a>
+                </li>
+                <li class="mobile-navigation__nav__menu-item">
+                    <a href="#" class="mobile-navigation__nav__menu-link">Супермаркеты</a>
+                </li>
+                <li class="mobile-navigation__nav__menu-item">
+                    <a href="#" class="mobile-navigation__nav__menu-link">Войти в кабинет</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <div class="row">
@@ -345,6 +365,24 @@
         </div>
     </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var link = $('.mobile-navigation__burger-link');
+            var link_active = $('.mobile-navigation__burger-link');
+            var navigation = $('.mobile-navigation__nav');
+            var nav_active = $('.nav_active');
+
+            link.click(function(){
+                link.toggleClass('.mobile-navigation__burger-link_active');
+                navigation.toggleClass('nav_active')                
+            });
+
+            link_active.click(function(){
+                navigation_active.removeClass('nav_active');
+            });
+        });
+    </script>
 
 </body>
 </html>
