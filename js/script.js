@@ -16,3 +16,8 @@ $(document).ready(function () {
         navigation_active.removeClass('nav_active');
     });
 });
+
+// phoneNumber form
+$(function(){
+    $('#phone-number').mask("+7(999) 999-99-99");
+})
