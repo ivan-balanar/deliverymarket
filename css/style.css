@@ -433,6 +433,98 @@ header {
     outline: none;
 }
 
+/* Slider */
+
+.rewiew__header {
+    margin-top: 110px;
+    margin-bottom: 40px;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    outline: none;
+}
+
+.slide__content {
+    width: 700px;
+    height: 350px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 70px 90px;
+    margin: 0 auto;
+}
+
+.prev, .next {
+    z-index: 0;
+    position: absolute;
+    background: #F0FAFF;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.prev {
+    transform: rotate(-180deg) translate(0, 50%);
+    top: 50%;
+}
+
+.next {
+    bottom: 50%;
+    left: 100%;
+    transform: translate(-200%, 50%);
+}
+
+.slide__content__heading {
+    font-family: Rubik;
+    font-weight: bold;
+    font-size: 24px;
+    color: #323232;
+    margin: 0;
+}
+
+.slide__content__rewiev {
+    padding-top: 20px;
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;   
+    color: #323232;
+}
+
+.slide__content__account {
+    display: flex;
+    align-items: center;
+}
+
+.slide__content__account-inform {
+    padding: 0 20px;
+}
+
+.nickname {
+    margin: 0;
+    font-family: Rubik;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #323232;
+}
+
+.socialnetwork {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #323232;
+    opacity: 0.5;
+}
+
+.socialnetwork:hover {
+    color: #323232;
+}
+
 /* Adaptive */
 
 @media (max-width: 1200px) {
