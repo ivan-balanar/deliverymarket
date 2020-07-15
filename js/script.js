@@ -20,4 +20,12 @@ $(document).ready(function () {
 // phoneNumber form
 $(function(){
     $('#phone-number').mask("+7(999) 999-99-99");
-})
+});
+
+// slick slider
+$(function(){
+    $('.slider').slick({
+        prevArrow: "<img src='./img/svg/Arrow.svg' class='prev' alt='prev'>",
+        nextArrow: "<img src='./img/svg/Arrow.svg' class='next' alt='next'>"
+    });
+});
