@@ -303,10 +303,6 @@ header {
     justify-content: space-between;
 }
 
-.market-card__name {
-    
-}
-
 .market-card__link {
     font-family: Rubik;
     font-weight: bold;
@@ -318,10 +314,6 @@ header {
 .market-card__link:hover {
     text-decoration: none;
     color: #FFE671;
-}
-
-.market-card__title {
-
 }
 
 .market-card__price {
@@ -446,6 +438,7 @@ header {
     align-items: center;
     padding: 30px;
     outline: none;
+    margin-bottom: 130px;
 }
 
 .slide__content {
@@ -523,6 +516,32 @@ header {
 
 .socialnetwork:hover {
     color: #323232;
+}
+
+/* footer */
+
+footer {
+    padding: 60px 0;
+    border: 1px solid #D2DCE1;
+}
+
+.footer__part {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer__part-link {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 16px;
+    color: #CACFD2;
+}
+
+.footer__part-link:hover {
+    color: #CACFD2;
 }
 
 /* Adaptive */
