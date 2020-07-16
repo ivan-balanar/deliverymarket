@@ -562,6 +562,12 @@ header {
         width: 250px;
     }
 
+    .slide__content {
+        width: 600px;
+        height: 330px;
+        padding: 40px 70px;
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -590,6 +596,17 @@ header {
 
     .mobile__get-link {
         width: 75%;
+    }
+
+    .rewiew__header {
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .slide__content {
+        width: 530px;
+        height: 270px;
+        padding: 20px 30px;
     }
 
 }
@@ -633,6 +650,28 @@ header {
 
     .mobile__get-link {
         width: 100%;
+    }
+
+    .slide__content__heading {
+        font-size: 20px;
+    }
+
+    .slide__content__rewiev {
+        font-size: 13px;
+    }
+
+    .nickname {
+        font-size: 14px;
+    }
+
+    .socialnetwork {
+        font-size: 13px;
+    }
+
+    .slide__content {
+        width: 370px;
+        height: 300px;
+        padding: 30px 30px;
     }
 
 }
@@ -729,7 +768,46 @@ header {
     .mobile .hero-button {
         width: 50vw;
     }
+}
 
+@media (max-width: 500px) {
+    .prev, .next {
+        opacity: 0;
+        z-index: 0;
+    }
+    
+    .slide__content {
+        width: 100%;
+        min-height: 250px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px 30px;
+    }
+
+    .slide__content__heading {
+        font-size: 16px;
+    }
+
+    .slide__content__rewiev {
+        font-size: 12px;
+    }
+
+    .slide__content__account-inform {
+        padding: 0 5px;
+    }
+
+    .nickname {
+        font-size: 12px;
+    }
+
+    .socialnetwork {
+        font-size: 12px;
+    }
+
+    .avatar {
+        max-width: 45px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -740,6 +818,11 @@ header {
     .mobile__get-link {
         height: 130px;
     }
+}
+
+@media (max-width: 460px) {
+    .slide__content {
+        padding: 30px 30px;
 }
 
 @media (max-width: 350px) {
@@ -766,5 +849,43 @@ header {
 
     .mobile__description {
         margin-top: 10px;
+    }
+
+    .rewiew__header {
+        font-size: 5vw;
+    }
+
+    .slide__content {
+        width: 100%;
+        min-height: 210px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px 30px;
+    }
+
+    .slide__content__heading {
+        font-size: 3.5vw;
+    }
+
+    .slide__content__rewiev {
+        font-size: 2.6vw;
+        line-height: 20px;
+    }
+
+    .slide__content__account-inform {
+        padding: 0 5px;
+    }
+
+    .nickname {
+        font-size: 2.4vw;
+    }
+
+    .socialnetwork {
+        font-size: 2.4vw;
+    }
+
+    .avatar {
+        max-width: 12vw;;
     }
 }
