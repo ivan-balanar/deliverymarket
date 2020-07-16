@@ -93,6 +93,8 @@ body {
 .mobile-navigation__nav__menu {
     list-style: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .mobile-navigation__nav__menu-item {
@@ -628,6 +630,17 @@ footer {
         padding: 20px 30px;
     }
 
+    .slides {
+        margin-bottom: 90px;
+    }
+
+    footer {
+        padding: 50px 0;
+    }
+    
+    .footer__part {
+        margin: 15px 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -786,6 +799,27 @@ footer {
 
     .mobile .hero-button {
         width: 50vw;
+    }
+
+    .slides {
+        margin-bottom: 70px;
+    }
+
+    footer {
+        padding: 40px 0;
+    }
+    
+    .footer__part {
+        margin: 5px 0;
+        height: 90px;
+    }
+
+    .footer__part-link {
+        font-size: 13px;
+    }
+
+    .footer__part-img {
+        margin: 5px 0;
     }
 }
 
